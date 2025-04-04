@@ -7,6 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"
+django = ">=4.2"
+djangorestframework = ">=3.14.0"
+djangorestframework-simplejwt = ">=5.2.2"
+psycopg2-binary = ">=2.9.6"
+drf-spectacular = ">=0.26.2"
+django-filter = ">=23.3"
+gunicorn = ">=21.2.0"
+python-dotenv = ">=1.0.0"
 
 
 [build-system]
