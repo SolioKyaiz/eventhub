@@ -29,12 +29,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    #Installed libraries
     'rest_framework',
     'rest_framework.authtoken',
     'drf_spectacular',
     'django_filters',
 
+    #My apps
     'users.apps.UsersConfig',
+    'events.apps.EventsConfig',
 ]
 
 MIDDLEWARE = [

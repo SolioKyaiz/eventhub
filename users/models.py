@@ -25,7 +25,6 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractUser):
-    date_joined = None
     username = models.CharField(
         max_length=255,
         blank=True,
@@ -46,17 +45,9 @@ class User(AbstractUser):
         blank=True,
         verbose_name="Фамилия",
     )
-    age = models.PositiveSmallIntegerField(
-        default=18,
-        verbose_name="Возраст",
-    )
-    is_active = models.BooleanField(
-        default=True,
-        verbose_name="Активен",
-    )
-    is_staff = models.BooleanField(
+    is_organizer = models.BooleanField(
         default=False,
-        verbose_name="Персонал"
+        verbose_name="Организатор"
     )
     is_superuser = models.BooleanField(
         default=False,
