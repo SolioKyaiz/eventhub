@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.db.models import ForeignKey
 
 from eventhub.settings import AUTH_USER_MODEL
 
@@ -47,6 +48,7 @@ class Event(models.Model):
         related_name='events',
         verbose_name='Организатор'
     )
+    capacity = models.PositiveIntegerField(default=100)
 
     created_at = models.DateTimeField(
         auto_now_add=True,
@@ -56,8 +58,6 @@ class Event(models.Model):
         auto_now=True,
         verbose_name='Дата обновления'
     )
-
-
 
 
 

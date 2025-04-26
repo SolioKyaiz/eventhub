@@ -17,6 +17,10 @@ gunicorn = ">=21.2.0"
 python-dotenv = ">=1.0.0"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-django = "^4.11.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

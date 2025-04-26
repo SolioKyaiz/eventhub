@@ -1,5 +1,4 @@
 
-
 from pathlib import Path
 from dotenv import load_dotenv
 import os
@@ -13,10 +12,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'unsafe-secret-key')
-DEBUG = os.getenv('DEBUG', 'True') == 'True'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
-ALLOWED_HOSTS = []
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
+
+ALLOWED_HOSTS = ['your-app-name.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     #My apps
     'users.apps.UsersConfig',
     'events.apps.EventsConfig',
+    'tickets.apps.TicketsConfig'
 ]
 
 MIDDLEWARE = [
