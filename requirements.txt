@@ -15,7 +15,6 @@ pyjwt==2.9.0
 python-dotenv==1.1.0
 pyyaml==6.0.2
 referencing==0.36.2
-rps-py==0.24.0
 sqlparse==0.5.3
 tzdata==2025.2
 uritemplate==4.1.1
