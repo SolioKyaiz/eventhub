@@ -5,6 +5,7 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
+from django.shortcuts import redirect
 
 urlpatterns = [
     path('admin/', admin.site.urls),

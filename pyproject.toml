@@ -15,6 +15,7 @@ drf-spectacular = ">=0.26.2"
 django-filter = ">=23.3"
 gunicorn = ">=21.2.0"
 python-dotenv = ">=1.0.0"
+django-jazzmin = "^3.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
