@@ -18,4 +18,4 @@ referencing==0.36.2
 sqlparse==0.5.3
 tzdata==2025.2
 uritemplate==4.1.1
-django-jazzmin>=2.6.0
+django-jazzmin>=4.2
